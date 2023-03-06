@@ -8,13 +8,13 @@
 <!--script -->
 <script language="javascript" type="text/javascript">
 /*모듀 소파 베이스 라인*/
-	$('.sofa_base li').click(function() {
-		var activeTab = jq(this).attr('data-tab');
-		$('.sofa_base li').removeClass('sofa_current');
-		$('.sofa_base_conent').removeClass('sofa_current');
-		$(this).addClass('sofa_current');
-		$('#' + activeTab).addClass('sofa_current');
-	});
+$('.sofa_base li').click(function() {
+	var activeTab = jq(this).attr('data-tab');
+	$('.sofa_base li').removeClass('sofa_current');
+	$('.sofa_base_conent').removeClass('sofa_current');
+	$(this).addClass('sofa_current');
+	$('#' + activeTab).addClass('sofa_current');
+});
 </script>
 <!--html -->
 <!--클릭될 부분 -->
@@ -30,14 +30,14 @@
   </li>
 <!--변경될 부분 -->
   <div class="goods_color">
-    <div class="left_color_chip" style="margin-top:60px;">
+    <div class="left_color_chip">
       <ul class="sofa_base">
-        <li class="cherry_red_button sofa_current" base-sofa="sofa1" ><p></p><span>체리 레드</span></li>
-        <li class="aqua_blue_button" base-sofa="sofa2"><p></p><span>아쿠아 블루</span></li>
-        <li class="olive_green_button"base-sofa="sofa3"><p></p><span>올리브 그린</span></li>
-        <li class="light_gray_button" base-sofa="sofa4"><p></p><span>라이트 그레이</span></li>
-        <li class="dark_gray_button" base-sofa="sofa5"><p></p><span>다크 그레이</span></li>
-        <li class="bright_purple_button" base-sofa="sofa6"><p></p><span>브라이트 퍼플</span></li>
+        <li class="sofa_current" base-sofa="sofa1" ><p></p><span>체리 레드</span></li>
+        <li base-sofa="sofa2"><p></p><span>아쿠아 블루</span></li>
+        <li base-sofa="sofa3"><p></p><span>올리브 그린</span></li>
+        <li base-sofa="sofa4"><p></p><span>라이트 그레이</span></li>
+        <li base-sofa="sofa5"><p></p><span>다크 그레이</span></li>
+        <li base-sofa="sofa6"><p></p><span>브라이트 퍼플</span></li>
       </ul>
     </div>
   </div>
